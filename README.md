@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pustak 📚
 
-## Getting Started
+A full-stack book catalog app — browse books, click to view details, availability, and purchase links.
 
-First, run the development server:
+Built to practice real-world full-stack patterns: a typed API, a relational schema, and a server-rendered frontend, without unnecessary complexity.
 
-```bash
+## Stack
+
+- **Next.js 14** (App Router) + **TypeScript**
+- **Tailwind CSS** for styling
+- **Prisma** ORM
+- **PostgreSQL** (hosted on Neon)
+
+## Features
+
+- Book grid fetched server-side from a PostgreSQL database
+- Book detail modal + shareable `/books/[id]` page
+- Availability status (in stock / pre-order / sold out) modeled as a database enum
+- Seed script for sample data
+
+## Running locally
+
+\`\`\`bash
+git clone https://github.com/YOUR_USERNAME/pustak.git
+cd pustak
+npm install
+# add your DATABASE_URL to a .env file
+npx prisma db push
+npx prisma db seed
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why I built this
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I wanted a small, real project to practice the exact stack most full-stack roles ask for — not a tutorial clone, but something with a real schema, a real API, and real deploy considerations.
