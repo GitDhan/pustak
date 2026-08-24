@@ -53,15 +53,6 @@ async function main () {
         availability: "IN_STOCK",
       },
       {
-        title: "The Pragmatic Programmer",
-        author: "David Thomas & Andrew Hunt",
-        description: "Classic guide to software craftsmanship, covering practical tips for becoming a better, more effective developer.",
-        coverImageUrl: "https://covers.openlibrary.org/b/isbn/020161622X-L.jpg",
-        genre: "Technology",
-        amazonUrl: "https://www.amazon.com/dp/020161622X",
-        availability: "IN_STOCK",
-      },
-      {
         title: "Educated",
         author: "Tara Westover",
         description: "A memoir about a woman who grows up in a survivalist family and eventually earns a PhD from Cambridge University.",
