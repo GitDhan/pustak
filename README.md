@@ -4,7 +4,7 @@ A full-stack book catalog app — browse books, click to view details, availabil
 
 Built to practice real-world full-stack patterns: a typed API, a relational schema, and a server-rendered frontend, without unnecessary complexity.
 
-![alt text](<Screenshot 2026-08-24 at 3.02.23 p.m..png>)
+![Pustak book catalog preview](pustak-preview.png)
 
 
 Production app url: https://pustak-ku3s.vercel.app/
